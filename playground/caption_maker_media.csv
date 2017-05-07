@@ -1,0 +1,11 @@
+9,YouTube,Xj8R7bEGK4w,北京欢迎你 (Welcome to Beijing),群星 (Various Artists),"Many Chinese stars sing ""Welcome to Beijing""",,,t,2016-05-01 02:18:17.641107+00,2
+10,YouTube,3EbBHoRgn-Y,小苹果 (Little Apple),筷子兄弟 (Chopstick Brothers),"Xiao Ping Guo, one of the most famous songs (and silly dances) in mainland China",,211.4,t,2016-05-01 03:04:05.677903+00,1
+11,YouTube,Uwc-06Nbq8k,你怎么舍得我难过, 帕尔哈提,"The Voice of China 3, 中國好聲音 第3季",62.0,262.6,t,2016-05-01 03:10:49.775451+00,1
+12,YouTube,oHdS2Vfo0vM,你不知道的事,陈永馨,"The Voice of China 3, 中國好聲音 第3季",,,t,2016-05-01 03:15:15.685096+00,1
+13,YouTube,lGFZF-tTGNk,美丽世界的孤儿,耿斯汉,"The Voice of China 3, 中國好聲音 第3季",64.1,254.0,t,2016-05-01 03:20:29.684438+00,1
+14,YouTube,6aosRlnxg9I,"對面的女孩看過來 (Look over here, girl)",任賢齊 (Richie Jen),The song everybody hears when learning Chinese,3.0,,t,2016-05-01 03:25:56.062392+00,1
+15,YouTube,UctriMuXYS0,义勇军进行曲 (Chinese National Anthem),中华人民共和国国歌,The National Anthem of the People's Republic of China,1.0,,t,2016-05-01 03:29:49.748152+00,1
+
+insert into media (media_type, reference_id, title, author, description, start_time, end_time, created_by)
+values
+('YouTube','Xj8R7bEGK4w','北京欢迎你 (Welcome to Beijing)','群星 (Various Artists)','Many Chinese stars sing collaborate for the 2008 Summer Olympics',null,null,'tlano')
