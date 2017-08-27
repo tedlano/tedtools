@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> head}}
+    <title>{{pageTitle}}</title>
+</head>
+<body>
+    {{> header}}
+    <br/>
+    <div class="container body">
+
+    	<h2>Smart Home</h2>
+    	<p>Control your home from here</p>
+
+        <button type='button' id='group1Toggle' class='btn btn-primary'>Toggle 1</button>
+
+        <table id='lights-table' class="table table-condensed">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>On/Off</th>
+          </tr>
+        </thead>
+        <tbody>
+            {{#lights}}
+            <tr id="light-{{id}}">
+                <td class='light-name'>{{name}}</td>
+                <td class='light-state'>{{state.on}}</td>
+                <td class='light-toggle'>
+                    <button type='button' class='btn btn-primary on-off'>On/Off</button>
+                </td>
+            </tr>
+            {{/lights}}
+        </tbody>
+      </table>
+      <br/>
+      <fieldset>
+        <label for="r">R</label>
+        <input type="range" min="0" max="255" id="r" step="1" value="0">
+        <output for="r" id="r_out">0</output>
+      </fieldset>
+
+      <fieldset>
+        <label for="g">G</label>
+        <input type="range" min="0" max="255" id="g" step="1" value="0">
+        <output for="g" id="g_out">0</output>
+      </fieldset>
+
+      <fieldset>
+        <label for="b">B</label>
+        <input type="range" min="0" max="255" id="b" step="1" value="0">
+        <output for="b" id="b_out">0</output>
+      </fieldset>
+
+      <output id="hex">#000000</output>
+
+    </div>
+    {{> footer}}
+    <script type="text/javascript" src="/js/smart-home.js"></script>
+</body>
+</html>

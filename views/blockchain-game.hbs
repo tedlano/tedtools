@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> head}}
+    <title>{{pageTitle}}</title>
+    <link href="/css/blockchain-game.css" rel="stylesheet">
+</head>
+<body>
+    {{> header}}
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Teams</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="chat-messages-wrapper">
+                            <ul id="messages" style="list-style: none;">
+                            </ul>
+                        </div>
+                        <div class="chat-form-wrapper">
+                            <form id="message-form" class="form-inline">
+                                <div class="form-group">
+                                    <input name="message" type="text" class="form-control" placeholder="Message goes here" autocomplete="off"/>
+                                </div>
+                                <button class='btn btn-primary'>Send</button>
+                                <!-- <button id="send-location">Send Location</button> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Register</h3>
+                    </div>
+                    <div class="panel-body">
+                        Hello
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/libs/jquery-3.2.1.min.js"></script>
+        <script src="/js/blockchain-game.js"></script>
+    {{> footer}}
+</body>
+</html>

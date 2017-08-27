@@ -55,6 +55,7 @@ $( document ).ready( function() {
 
             // If guess is correct
             if(status == "correct"){
+
                 correct++;
                 streak++;
                 setTimeout(function() {
@@ -66,6 +67,14 @@ $( document ).ready( function() {
 
             // If guess is wrong
             } else {
+                $.ajax({
+                    type: "GET",
+                    url: "/smart-home/lights/toggle/3",
+                    dataType: "json"
+                }).done(function (data) {
+                    console.log("DONE");
+                });
+
                 wrong++;
                 streak = 0;
                 sayNumber();

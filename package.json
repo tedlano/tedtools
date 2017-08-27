@@ -1,19 +1,26 @@
 {
   "name": "tedtools",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "supervisor ./bin/www"
+      "start": "node server/server.js",
+      "test": "mocha server/**/*.test.js",
+      "test-watch": "nodemon --exec 'npm test'"
   },
+  "engines": {
+      "node": "7.4.0"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "express": "~4.14.0",
     "hbs": "^4.0.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.7.0",
+    "node-hue-api": "^2.4.2",
     "pg": "^6.1.5",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^2.0.3"
   }
 }

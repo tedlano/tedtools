@@ -1,0 +1,13 @@
+#message-form input{
+    width: 100%;
+}
+
+ul#messages  {
+    list-style: none;
+    padding-left: 0;
+}
+
+div.chat-messages-wrapper {
+    height: 250px;
+    overflow-y: scroll;
+}
