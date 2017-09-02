@@ -18,7 +18,6 @@
         <thead>
           <tr>
             <th>Name</th>
-            <th>Status</th>
             <th>On/Off</th>
           </tr>
         </thead>
@@ -26,9 +25,12 @@
             {{#lights}}
             <tr id="light-{{id}}">
                 <td class='light-name'>{{name}}</td>
-                <td class='light-state'>{{state.on}}</td>
                 <td class='light-toggle'>
-                    <button type='button' class='btn btn-primary on-off'>On/Off</button>
+                    {{#if state.on}}
+                        <button type='button' class='btn btn-success on-off'>On</button>
+                    {{else}}
+                        <button type='button' class='btn btn-default on-off'>Off</button>
+                    {{/if}}
                 </td>
             </tr>
             {{/lights}}
